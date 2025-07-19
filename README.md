@@ -1,65 +1,74 @@
 
-### 🏦 **UPI Transactions Analysis - Power BI Project**
+## 1. **Project Title / Headline**
 
-## 🎯 **Title & Objectives**
-**Project Title:** UPI Transactions Analysis using Power BI  
-**Objective:**  The objective of this project is to perform an in-depth analysis of UPI (Unified Payments Interface) transaction data for the year **2024**. The project aims to uncover trends related to transactions by month, amount flow, balance tracking, bank names involved, city-wise distribution, and user demographics (like gender, age group, and device type). The purpose of this project is to enable better decision-making by visualizing key performance indicators (KPIs) and trends.
+**UPI Transactions Dashboard – 2024 Analysis**
 
----
 
-## 📊 **Dataset Details, Insights, and Features**
-**Dataset Name:** UPI Transactions Dataset  
-**Description:** The dataset contains detailed UPI transactional data, including transaction amount, balance, city, device type, bank name, merchant details, payment methods, purposes, and more. This data is analyzed to extract meaningful insights.
+## 2. **Short Description / Purpose**
 
-### ✅ **Insights and Features Covered:**
- 
-  - 💳 **Transaction by Month (Stacked Column Chart):** Visualizes the monthly UPI transaction volume for the year **2024**, helping track transaction patterns.
-  - 📊 **Button-Based Visualizations (Amount and Balance):**
-    - 💸 **Line Chart for Amount**
-    - 💰 **Column Chart for Amount**
-    - 💵 **Line Chart for Balance**
-    - 💳 **Column Chart for Balance**
-    - ✅ Clicking any of the **4 buttons** will dynamically change the visualizations accordingly.
-  - 🔥 **Slicers (Dynamic Filters):**  
-    - 📌 **Bank Name Sent**
-    - 🏦 **Bank Name Received**
-    - 🌆 **City**
-    - 📱 **Device Type**
-    - 👩‍💼 **Gender**
-    - 🎂 **Age Group**
-    - 🛍 **Merchant Name**
-    - 💳 **Payment Method**
-    - 🎯 **Purpose**
-    - 🔄 **Transaction Type**
-  - 📊 **Matrix (Transaction Details):** 
-     Shows detailed transactional data with fields like:
-      - 📅 **Transaction Date**
-      - 🌆 **City**
-      - 💰 **Currency**
-      - 💸 **Amount**
-      - 💳 **Remaining Balance**
- 
-  - ✅ **Slicer Interconnection:** All slicers in **Sheet 1** and **Sheet 2** are interconnected.  
-  - 🔄 **Cross-Filtering:** If a filter is applied on **Sheet 1**, it automatically applies the same filter on **Sheet 2** ensuring seamless data synchronization.
-  - 🎨 **Visual Switching with Buttons:** Clicking on any of the four buttons changes the visualization accordingly.
+This Power BI dashboard visualizes and analyzes UPI (Unified Payments Interface) transactions for the year 2024. It provides dynamic insights into transaction patterns, user demographics, payment behaviors, and balances to support data-driven decisions for financial institutions and digital payment platforms.
 
----
 
-## 🛠 **Tools and Technologies Used**
-- 💻 **Power BI:** For creating interactive dashboards and reports.
-- 📊 **Excel (Dataset):** Source file containing raw UPI transaction data.
-- 💡 **DAX (Data Analysis Expressions):** Used for data calculations and creating custom measures.
-- 🔥 **Data Modelling:** Establishing relationships between tables for interconnected filters.
 
----
+## 3. **Tech Stack**
 
-## 💎 **Key Takeaways and Learnings**
-- 💬 **Data Synchronization:** Learned how to interconnect slicers across multiple sheets, ensuring consistent filtering.
-- 📊 **Button-Based Dynamic Visualizations:** Enhanced knowledge of using buttons to dynamically switch between visualizations (line chart, column chart, etc.).
-- 🏦 **Transaction Flow Analysis:** Identified key insights from monthly transaction patterns, payment methods, and purpose-based transactions.
-- 💳 **Bank Transaction Insights:** Understood the cash flow from bank to bank based on sender and receiver bank names.
-- 🔥 **Cross-Filter Impact:** Built a connected slicer system that allows filters on one sheet to affect another sheet automatically.
-- 💡 **Demographic Insights:** Derived insights based on device type, gender, age group, and city to understand user behavior in UPI transactions.
+The dashboard was built using the following tools and technologies:
 
----
+* 📊 **Power BI Desktop** – Main platform for developing interactive data visualizations and reports
+* 🧩 **Power Query** – Used for importing, transforming, and cleaning the transaction data
+* 🧠 **DAX (Data Analysis Expressions)** – Applied for creating dynamic measures and calculated columns
+* 🏗️ **Data Modeling** – Built relationships among slicer fields and transaction tables for seamless filtering across sheets
+* 📁 **File Format** – `.pbix` for Power BI project file and `.png` for dashboard snapshot previews
+
+
+
+## 4. **Dataset Details**
+
+The dataset consists of **UPI transaction records for the year 2024**, including key attributes such as:
+
+* Transaction Date
+* Amount & Remaining Balance
+* Bank Name (Sender & Receiver)
+* City, Gender, Age Group, Device Type
+* Merchant Details, Payment Method, Purpose, Transaction Type
+* Currency
+
+The data is structured in tabular format and has been cleaned and transformed using Power Query within Power BI. Slicers are built on multiple categorical fields for flexible, cross-filtered exploration.
+
+
+##  5. **Features / Highlights**
+
+### 🧩 **Business Problem**
+
+With the rapid adoption of digital payments, financial platforms need a way to monitor and interpret transaction flows, customer behavior, and usage trends.
+
+### 🎯 **Goal of the Dashboard**
+
+To offer a real-time, filterable analysis of UPI transactions based on multiple dimensions — enabling banks, fintechs, and analysts to draw actionable insights on user behavior and transaction dynamics.
+
+### **Walkthrough of Key Visuals**
+
+* 📅 **Stacked Column Chart** – Displays total transactions month-wise for 2024
+* 📈📊 **Line & Column Charts (via Buttons)** – Toggleable charts show comparisons between:
+
+  * **Transaction Amounts**
+  * **Remaining Balances**
+*  **Matrix Table** – Detailed view of each transaction, showing date, city, currency, amount, and balance
+* **Slicers** – Interactive filters for:
+
+  * Bank Name (Sent & Received), City, Device Type
+  * Gender, Age Group, Merchant Name
+  * Payment Method, Transaction Purpose & Type
+
+### **Interactivity Across Sheets**
+
+All slicers are synced across pages, ensuring consistent filtering across all visuals and tabs in the report.
+
+### **Business Impact & Insights**
+
+* Understand how transaction volumes vary by month
+* Identify peak usage times and high-value customers
+* Spot patterns based on gender, age, city, and device type
+* Analyze the performance of specific banks, merchants, or transaction types
+* Discover anomalies or imbalances using balance-related charts
 
